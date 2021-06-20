@@ -42,7 +42,7 @@ module.exports = {
       },
     ],
     camelcase: "warn",
-    "linebreak-style": [2, process.env.IS_GITHUB_ACTIONS === 'true' ? "unix" : "windows"],
+    "linebreak-style": [2, (process.platform === "win32" ? "windows" : "unix")],
 
     // Organize
     "jsx-a11y/anchor-is-valid": "off",
