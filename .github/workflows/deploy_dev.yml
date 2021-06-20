@@ -45,7 +45,7 @@ jobs:
           cp -r build/ app/
 
       - name: Generate deployment package
-        run: zip -r deploy-web.zip ./app ./.ebextenstions
+        run: zip -r deploy-web.zip ./app ./.ebextensions
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v14
