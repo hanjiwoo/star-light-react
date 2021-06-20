@@ -47,7 +47,7 @@ jobs:
           cp -r build/ app/
 
       - name: Generate deployment package
-        run: git archive -v -o deploy-web.zip --format=zip HEAD
+        run: zip -r deploy-web.zip . -x *.git* node_modules/\*
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v14
