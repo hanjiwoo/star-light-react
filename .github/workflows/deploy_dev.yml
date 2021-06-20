@@ -16,6 +16,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env: 
+      CI: false
     steps:
       - name: Checkout source code
         uses: actions/checkout@v1
