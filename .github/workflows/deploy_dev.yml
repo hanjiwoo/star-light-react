@@ -37,7 +37,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: IS_GITHUB_ACTIONS="true" npm run build:dev
+        run: npm run build:dev
       
       - name: Copy build to app
         run: |
