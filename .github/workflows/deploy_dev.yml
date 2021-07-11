@@ -33,11 +33,11 @@ jobs:
         with:
           node-version: '12.18.3'
 
-      # - name: Install packages
-      #   run: npm install
+      - name: Install packages
+        run: npm install
 
-      # - name: Build
-      #   run: npm run build:dev
+      - name: Build
+        run: npm run build:dev
       
       # - name: Copy build to app
       #   run: |
